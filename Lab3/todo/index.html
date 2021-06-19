@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>CheckList</title>
+</head>
+<body>
+    <div id="div" class="header">
+        <h1>CheckList</h1>
+        <form @submit.prevent="addCheckList">
+            <label for="newList" class="label">Задача</label>
+            <input v-model="newList" type="text" name="newList" id="newList" value="">
+            <button class="add" type="submit" name="button">Добавить</button>
+        </form>
+        <ul id="ul">
+            <li v-for="list in lists">
+                <input class="checkbox" type="checkbox" v-model="list.done">
+                <span :class="{ done: list.done }">{{list.title}}</span>
+                <button class="remove" @click="removeCheckList(list)" type="remove" name="remove">X</button>
+            </li>
+        </ul>
+    </div>
+	<script src="app.js"></script>
+</body>
+</html

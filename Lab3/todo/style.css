@@ -1,0 +1,72 @@
+body {
+    box-sizing: border-box;
+    max-width: 500px;
+    max-height: 100%;
+	margin: 0 auto;
+	padding-top: 50px;
+
+}
+ul {
+	margin: 0;
+	padding: 0;   
+}
+ul li {
+	cursor: pointer;
+	position: relative;
+    padding: 10px 15px 15px 15px;
+	font-size: 30px;
+	border: 5px rgb(180, 163, 64) solid;
+	float:center;
+}
+.remove {
+    margin-right: auto;
+	padding: 20px 20px 20px 20px;
+    background: rgba(255, 0, 0, 0.678);
+}
+.header {
+	background: #1BA39C;
+	padding: 25px 25px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 10px;
+}
+.header:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+input {
+	border: none;
+	width: 75%;
+	padding: 25px 50px;
+	font-size: 20px;
+    border-color: #1BA39C;
+}
+.add {
+	padding: 15px 15px;
+	width: 25%;
+	background: #ffffff;
+	color: rgb(7, 9, 36);
+	float: center;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+	border: 10px #1BA39C solid;
+}
+.done {
+    background: rgb(95, 94, 94);
+    color: rgb(0, 0, 0);
+    text-decoration: line-through;
+}
+.label {
+    border: none;
+	width: 75%;
+	padding: 25px 100px;
+	float: center;
+	font-size: 30px;
+}
+.checkbox {
+    display: 'block';
+    width: 5%;
+    float: center;
+}
